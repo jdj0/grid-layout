@@ -12,10 +12,16 @@ font-family: sans-serif;
 .container-sidebar {
     background-color: rgba(26, 146, 211, 1);
     color: white;
+    font-weight:bold;
 }
+
+.icon {
+    margin-right: 20px;
+}
+
 .container-sidebar > div {
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: 20px;
 }
 
@@ -43,4 +49,11 @@ font-family: sans-serif;
     border-radius: 15px;
     text-align: center;
     color: white;
+    width: 100px;
+    margin: 5px;
+}
+
+.sidebar-header {
+    font-size:xx-large;
+    margin-top: 20px;
 }
