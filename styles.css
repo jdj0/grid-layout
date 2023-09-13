@@ -1,0 +1,46 @@
+body {
+margin: 0;
+font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.container-sidebar {
+    background-color: rgba(26, 146, 211, 1);
+    color: white;
+}
+.container-sidebar > div {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 20px;
+}
+
+.extra-gap {
+    margin-top: 30px;
+}
+
+.searchbar {
+    background-color: gray;
+    border-radius: 15px;
+    height: 25px;
+    width: 100px;
+}
+
+.cute-dog {
+    height: 50px;
+    background-color: #facc15;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.blue-btn {
+    background-color: rgba(26, 146, 211, 1);
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
