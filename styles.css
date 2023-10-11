@@ -1,3 +1,21 @@
+:root{
+    font-size: 16px;
+    --text-primary: black;
+    --text-secondary: white;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 1s;
+    --drawer-colour: rgba(26, 146, 211, 1);
+    --drawer-width: clamp(210px, 22vw, 325px);
+    --nav-bg-1: #f8f8f8;
+    --nav-colour-1: #c9c9c9;
+    --nav-colour-2: #62daff6e;
+    --blue-1: #084c61;
+    --content-grey: rgba(235, 235, 235);
+    --transition-notDrawer: margin-left 0.4s ease-in;
+    --transition-drawer: width 0.4s ease-in;
+}
+
 body {
 margin: 0;
 font-family: sans-serif;
