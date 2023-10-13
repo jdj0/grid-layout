@@ -28,6 +28,8 @@ body {
     grid-template-columns: 5rem 1fr 1fr 1fr;
 }
 
+/* Sidebar */
+
 .drawer{
     grid-area: drawer;
     background-color: var(--drawer-colour);
@@ -44,6 +46,11 @@ body {
 
 .drawer:hover > .menuItem > h1 {
     display: inline;
+}
+
+.drawer:hover ~ .navbar,
+.drawer:hover ~ .content {
+    margin-left: calc(var(--drawer-width) - 5rem);
 }
 
 .menuItem > h1 {
@@ -74,10 +81,129 @@ body {
     cursor: pointer;
 }
 
+.drawer > div:nth-child(8) {
+    padding-top: 60px;
+}
+
+.dashboard {
+    font-size: 12px, calc(25px + 0.9vw), 50px;
+}
+
+.dashboard img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: calc(40px + .7vw);
+    height: calc(40px + .7vw);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+/* Navbar */
+
 .navbar{
     grid-area: nav;
+    transition: var(--transition-notDrawer);
+    background-color: var(--nav-bg-1);
+    padding: 1.5rem 3rem;
+    border-bottom: 2px solid rgb(219, 219, 219);
 }
+
+.topNav {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-bottom: 2.5rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    width: 100%;
+}
+
+.search > input {
+    display: inline-block;
+    border: 0;
+    background-color: var(--nav-colour-1);
+    padding: 0.5rem 1.5rem;
+    outline-color: var(--blue-1);
+    margin-left: 1.25rem;
+    border-radius: 5px;
+    width: min(80%, 600px);
+    padding-right: 20px;
+}
+
+.navbar .account {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.account .avatar {
+    margin: 0 1rem 2.5rem;
+    height: 40px;
+    width: 40px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile .avatar {
+    width: 75px;
+    height: 75px;
+}
+
+.greeting {
+    font-weight: 800;
+    margin-bottom: .4rem;
+}
+
+.profile .name {
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn {
+    background-color: var(--drawer-colour);
+    color: var(--text-secondary);
+    font-weight: 800;
+    padding: .5rem 1.8rem;
+    border-radius: 7px;
+    font-size: 20px;
+    border: 1px solid gray;
+}
+
+/* Main Content */
 
 .content{
     grid-area: content;
+    transition: var(--transition-notDrawer);
 }
